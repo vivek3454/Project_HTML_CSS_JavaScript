@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    padding: 20px;
+    background: rgb(167, 198, 255);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 0px black;
+}
+
+button{
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 12px;
+    border: none;
+    margin: 15px 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+span{
+    font-size: 19px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+    background: cornflowerblue;
+}
