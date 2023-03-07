@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move Image with Arrow Keys</title>
+	<style type="text/css">
+		#image {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+            max-width: 400px;
+		}
+	</style>
+</head>
+<body>
+	<img id="image" src="/25 Move the Image/arrow.jpg" alt="joi">
+	<script type="text/javascript">
+		// get the image element
+		var image = document.getElementById("image")
+
+		// set the initial position of the image
+		var x = 0
+		var y = 0
+
+		// add an event listener for keydown events
+		document.addEventListener("keydown", function(event) {
+			// check the key code of the pressed key
+            console.log(event.key);
+			switch (event.key) {
+				case "ArrowLeft": // left arrow
+					x -= 10
+					break
+				case "ArrowUp": // up arrow
+					y -= 10
+					break
+				case "ArrowRight": // right arrow
+					x += 10
+					break
+				case "ArrowDown": // down arrow
+					y += 10
+					break
+			}
+
+			// update the position of the image
+			image.style.left = x + "px"
+			image.style.top = y + "px"
+		})
+	</script>
+</body>
+</html>

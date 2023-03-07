@@ -1,0 +1,28 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+button{
+    /* width: 100%; */
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}

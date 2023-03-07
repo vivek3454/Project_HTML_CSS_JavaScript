@@ -1,0 +1,21 @@
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+button{
+    padding: 15px 25px;
+    color: white;
+    background: #000;
+    cursor: pointer;
+}
+.head{
+    content: "PWSkills";
+}
