@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Adding List Items to an Ordered List</title>
+    <style>
+
+        h1 {
+            text-align: center;            
+        }
+
+        .container{
+            max-width: 500px;
+            margin: 0 auto;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 19px;
+            font-weight: 300;
+        }
+
+        li{
+            margin-bottom: 8px;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            background: #000;
+            color: aliceblue;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>What you'll learn</h1>
+        <ul id="list">
+            
+        </ul>
+        <div class="btn">
+            <button type="button" id="delete">Delete List </button>
+            <button type="button" id="btn">Add List</button>
+        </div>
+    </div>
+    <script src="/20 Dynamically Adding List Items to an Ordered List/script.js"></script>
+</body>
+
+</html>

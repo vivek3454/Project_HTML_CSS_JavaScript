@@ -338,9 +338,10 @@ let withdraw = (user, amount) => {
 }
 
 let user = { name: "Vivek", balance: 100 }
-deposit(user,200)
-console.log(user);
+// deposit(user,200)
+// console.log(user);
 //* Output: { name: "Vivek", balance: 300 }
-withdraw(user,400)
-console.log(user);
+// withdraw(user,400)
+// console.log(user);
 //* Output: { name: "Vivek", balance: 0 }
+
