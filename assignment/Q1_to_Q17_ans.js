@@ -138,7 +138,7 @@ let Name = "vivek"
 //* Output: 2
 
 
-//! 7) Remove Duplicates
+//? 7) Remove Duplicates
 
 function removeDuplicates(arr) {
     let uniqueArr = [...new Set(arr)];
@@ -332,7 +332,7 @@ let withdraw = (user, amount) => {
     if (user.balance >= amount) {
         user.balance -= amount
     }
-    else{
+    else {
         console.log("Insufficient balance");
     }
 }
