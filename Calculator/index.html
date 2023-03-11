@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/calculator.png">
+    <title>Calculator</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div id="display"></div>
+            <div>
+                <button type="button"  onclick="display.innerText = '' " class="change-color">CE</button>
+                <button type="button"  onclick="display.innerText = display.innerText.toString().slice(0,-1)" class="change-color">DE</button>
+                <button type="button"  onclick="display.innerText += '.' " class="change-color">.</button>
+                <button type="button" onclick="display.innerText += '/' " class="change-color">/</button>
+            </div>
+            <div>
+                <button type="button"  onclick="display.innerText += '7' ">7</button>
+                <button type="button"  onclick="display.innerText += '8' ">8</button>
+                <button type="button"  onclick="display.innerText += '9' ">9</button>
+                <button type="button"  onclick="display.innerText += '*' " class="change-color">*</button>
+            </div>
+            <div>
+                <button type="button"  onclick="display.innerText += '4' ">4</button>
+                <button type="button"  onclick="display.innerText += '5' ">5</button>
+                <button type="button"  onclick="display.innerText += '6' ">6</button>
+                <button type="button"  onclick="display.innerText += '-' " class="change-color">-</button>
+            </div>
+            <div>
+                <button type="button"  onclick="display.innerText += '1' ">1</button>
+                <button type="button"  onclick="display.innerText += '2' ">2</button>
+                <button type="button"  onclick="display.innerText += '3' ">3</button>
+                <button type="button"  onclick="display.innerText += '+' " class="change-color">+</button>
+            </div>
+            <div>
+                <button type="button"  onclick="display.innerText += '0' ">0</button>
+                <button type="button"  onclick="display.innerText += '00' ">00</button>
+                <button type="button"  onclick="display.innerText = eval(display.innerText)" class="flex-grow change-color">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn1 = document.getElementById("btn1")
+        let display = document.getElementById("display")
+        btn1.onclick = () =>{
+            display.innerText += '7'
+        }
+    </script>
+</body>
+</html>
