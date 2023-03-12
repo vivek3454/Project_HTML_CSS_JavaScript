@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/846a5b7040.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="product-container">
+        <div class="small-images">
+            <img src="/images/img1.webp" alt="" onclick="myfunction(this)">
+            <img src="/images/img2.webp" alt="" onclick="myfunction(this)">
+            <img src="/images/img3.webp" alt="" onclick="myfunction(this)">
+            <img src="/images/img4.webp" alt="" onclick="myfunction(this)">
+        </div>
+
+        <div class="img-container">
+            <img id="img-box" src="/images/img1.webp" alt="">
+        </div>
+
+        <div class="product-info">
+            <h2>Dennis Lingo Men's Solid Orange Casual Shirt</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit modi aut ad magnam id nemo itaque velit pariatur cupiditate dignissimos, voluptatum debitis Lorem, ipsum dolor. repudiandae amet aperiam obcaecati perferendis blanditiis porro qui!
+            </p>
+            <ul>
+                <li>Lorem ipsum dolor  Totam vel, eligendi</li>
+                <li>sit amet consectetur adipisicing elit</li>
+                <li> Odit modi aut ad magnam id nemo</li>
+            </ul>
+            <div class="rating">
+                <div class="rating-star">
+                    <p>4.5<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p>11,000 ratings and 2500 reviews</p>
+            </div>
+
+            <div class="price">Rs. 699 <span class="cut-mark">Rs. 1200</span><span class="green">(30% off)</span></div>
+            <div class="btns">
+                <button type="button"><i class="fa-solid fa-bag-shopping"></i> By Now</button>
+                <button type="button"><i class="fa-solid fa-heart"></i> On Flipcart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myfunction(smallImg) {
+            const fullImg = document.getElementById("img-box")
+            // smallImg.style.opacity = "1"
+            fullImg.src = smallImg.src
+        }
+    </script>
+</body>
+
+</html>
