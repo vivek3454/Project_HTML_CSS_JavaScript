@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #826afb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 13px;
+    padding: 35px 25px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+.password-box{
+    height: 60px;
+    position: relative;
+}
+.password-box input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 0 50px 0 20px;
+    background-color: transparent;
+    font-size: 19px;
+    border: 1px solid #aaa;
+}
+
+.copy-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #707070;
+    cursor: pointer;
+}
+
+.copy-icon:hover{
+    color: #826afb;
+}
+
+.range-box{
+    /* height: 40px; */
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.range-box input{
+    width: 100%;
+    height: 5px;
+    accent-color: #826afb;
+}
+.range-box .range_num{
+    min-width: 30px;
+    text-align: right;
+    font-size: 20px;
+    color: #707070;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px 0;
+    background-color: #826afb;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    background-color: #947eff;
+}
