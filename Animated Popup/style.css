@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+section .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    
+}
+
+section.show .profile{
+    /* z-index: -1; */
+    display: none;
+}
+
+section .profile .profile-img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #4070f4;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+
+.profile .name,
+.profile .profession{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.profile .profession{
+    font-weight: 500;
+}
+
+.profile .button{
+    background: #4070f4;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.profile .button button{
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.profile .button:hover{
+    background: #1b58ff;
+}
+
+.button i{
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+section .popup-outer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.2);
+    transition: opacity 0.2s 0s ease-in-out,
+                transform 0.2s 0s ease-in-out;
+}
+
+section.show .popup-outer{
+    transform: scale(1);
+    opacity: 10;
+}
+
+section .popup-box{
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.popup-box .fa-xmark{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #b4b4b4;
+    transition: all .2s;
+}
+
+.popup-box .fa-xmark:hover{
+    color: #333;
+}
+
+section .popup-box .profile-text{
+    display: flex;
+    align-items: center;
+}
+
+section .popup-box img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-text .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.profile-text .text .name{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.profile-text .text .profession{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+section .popup-box textarea{
+    min-height: 140px;
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 500;
+    background: #f3f3f3;
+}
+
+.popup-box .button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.popup-box .button .send{
+    background: #4070f4;
+    padding: 8px 20px;
+    font-size: 17px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.popup-box .button .send:hover{
+    background: #2761ff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Popup</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/846a5b7040.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="profile">
+            <div class="profile-img">
+                <img src="/IMG_20210923_101234.jpg" alt="">
+            </div>
+            <span class="name">Vivek Parde</span>
+            <span class="profession">Web Developer</span>
+            <div id="hireBtn" class="button">
+                <i class="fa-solid fa-envelope"></i>
+                <button>Hire Me</button>
+            </div>
+        </div>
+
+        <!-- Popup box start -->
+        <div class="popup-outer">
+            <div class="popup-box">
+                <i id="Close" class="fa-solid fa-xmark close"></i>
+                <div class="profile-text">
+                    <img src="/IMG_20210923_101234.jpg" alt="">
+                    <div class="text">
+                        <span class="name">Vivek Parde</span>
+                        <span class="profession">Web Developer</span>
+                    </div>
+                </div>
+                <form action="">
+                    <textarea placeholder="Enter your message"></textarea>
+                    <div class="button">
+                        <button class="send">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
