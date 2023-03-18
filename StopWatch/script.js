@@ -12,7 +12,7 @@ const resetBtn = document.querySelector(".reset")
 let Start = () => {
     startBtn.classList.add("active")
     stopBtn.classList.remove("active")
-    
+
     startTimer = setInterval(() => {
         ms++
         ms = ms < 10 ? '0' + ms : ms
@@ -33,20 +33,20 @@ let Start = () => {
         }
         putValues()
     }, 10);
-    
+
 }
-let Stop = ()=> {
+let Stop = () => {
     startBtn.classList.remove("active")
     stopBtn.classList.add("active")
     clearInterval(startTimer)
-    
+
 }
-let Reset = ()=> {
+let Reset = () => {
     startBtn.classList.remove("active")
     stopBtn.classList.remove("active")
     clearInterval(startTimer)
     hr = min = sec = ms = '0' + 0
-    putValues()    
+    putValues()
 }
 
 startBtn.addEventListener("click", Start)
