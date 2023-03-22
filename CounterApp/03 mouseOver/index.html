@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MouseOver</title>
+    <link rel="stylesheet" href="/common.css">
+</head>
+
+<body>
+    <div id="box">
+        <p class="clickMe">Restricted Area 🙅</p>
+    </div>
+</body>
+<script>
+    const boxElement = document.getElementById("box");
+
+    // add a mouseover event listener to the element
+    boxElement.addEventListener("mouseover", function () {
+        alert(
+            "you entered in Restricted Area 🙅 (mouse over event is working properly)"
+        );
+    });
+</script>
+
+</html>
